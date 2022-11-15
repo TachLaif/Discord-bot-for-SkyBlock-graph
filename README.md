@@ -53,9 +53,9 @@ e.g. Accuracy
 
 ## License and credits
 
-This work is made available under the **[ENTER LICENSE HERE]**.
+This work is made available under the <a href="https://github.com/TachLaif/Discord-bot-for-SkyBlock-graph/blob/main/LICENSE">**GNU Affero General Public License v3.0**</a>.
 
-Project made by <a href="https://github.com/TachLaif">TechLife</a>. (Special thanks to: )
+Project made by <a href="https://github.com/TachLaif">TechLife</a>.
 <br><br><a href="https://discord.com"><img src="https://img.shields.io/badge/TechLife-4447-informational?style=for-the-badge&logo=discord&logoColor=white"></a><br><a href="https://twitter.com/_Tech4Life_"><img src="https://img.shields.io/badge/Twitter-@__Tech4Life__-informational?style=for-the-badge&logo=twitter&logoColor=white"></a><br><a href="https://www.buymeacoffee.com/TechLife"><img src="https://img.shields.io/badge/Buy%20me%20a-coffee-red?style=for-the-badge&logo=buymeacoffee&logoColor=white" title="I like coffee!"></a>
 
 ## Postscript
