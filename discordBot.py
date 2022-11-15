@@ -1,6 +1,6 @@
 # Copyright (C) 2022 - Benjamin Hupf
 #
-# Discord bot for SkyBlock graph (https://github.com/TachLaif/Bank-graph-for-Hypixel-Skyblock)
+# Discord bot for SkyBlock graph (https://github.com/TachLaif/Discord-bot-for-SkyBlock-graph)
 # - Made with ♥ by TechLife (https://github.com/TachLaif)
 # Last update: 15.11.2022
 #
@@ -11,7 +11,7 @@
 import discord
 import os
 from dotenv import load_dotenv, find_dotenv
-import main
+from main import generateGraph
 
 load_dotenv(find_dotenv())
 
@@ -34,11 +34,9 @@ async def on_ready():
 async def on_message(message):
     if message.author.bot:
         return
-    if message.content.lower() == command_prefix + 'help':
-        await message.channel.send('Help')
     if message.content.lower() == command_prefix + 'graph':
         try:
-            main.generateGraph(os.environ.get('API_KEY'), os.environ.get('PLAYER_UUID'), dark_mode)
+            generateGraph(os.environ.get('API_KEY'), os.environ.get('PLAYER_UUID'), dark_mode)
             with open('graph.png', 'rb') as f:
                 file = discord.File(f, filename = 'graph.png')
                 await message.channel.send(file = file)
