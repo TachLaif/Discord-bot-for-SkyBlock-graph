@@ -16,6 +16,7 @@ Optional program which uses my Bank graph for Hypixel Skyblock program and conne
 - <a href="#description">Description</a>
 - <a href="#table-of-contents">Table of Contents</a>
 - <a href="#how-to-install">How to install</a>
+  - <a href="#installing-the-libraries">Installing the libraries</a>
 - <a href="#how-to-use">How to use</a>
 - <a href="#how-it-works">How it works</a>
 - <a href="#tests-and-results">Tests and results</a> <!-- OPTIONAL -->
@@ -24,7 +25,20 @@ Optional program which uses my Bank graph for Hypixel Skyblock program and conne
 - <a href="#postscript">Postscript</a> <!-- OPTIONAL -->
 
 ## How to install
+- <a href="https://www.python.org/downloads/release/python-3110/">Python 3.11.0</a>
+- <a href="https://pypi.org/project/discord.py/">discord.py</a>
+- <a href="https://pypi.org/project/python-dotenv/">dotenv</a>
+- os
+- <a href="https://github.com/TachLaif/Bank-graph-for-Hypixel-Skyblock">Bank graph for Hypixel SkyBlock</a>
+- Discord Bot Token
 
+### Installing the libraries
+
+```cmd
+pip install discord.py python-dotenv
+```
+
+The library __os__ is preinstalled with Python 3.11.0.
 <!-- First a list of all the requirements to run the program 
 If necessary use ### Headlines for subcategories
 Detailed description of how to install the specific requirements and everything the user has to consider for the program to run properly
