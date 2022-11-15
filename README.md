@@ -19,7 +19,7 @@ Optional program which uses my Bank graph for Hypixel Skyblock program and conne
   - <a href="#installing-the-libraries">Installing the libraries</a>
 - <a href="#how-to-use">How to use</a>
 - <a href="#how-it-works">How it works</a>
-- <a href="#tests-and-results">Tests and results</a> <!-- OPTIONAL -->
+- <a href="#tests-and-results">Tests and results</a>
 - <a href="#problems">Problems</a> <!-- OPTIONAL -->
 - <a href="#license-and-credits">License and credits</a>
 - <a href="#postscript">Postscript</a> <!-- OPTIONAL -->
@@ -54,11 +54,8 @@ Detailed description of how to install the specific requirements and everything 
 <!-- Detailed description of how the program works and maybe the thought process that went into creating it -->
 
 ## Tests and results 
-<!-- OPTIONAL -->
 
-<!-- Some tests run on the program, to ensure and show that everything works without any problems
-e.g. Accuracy 
--->
+Program tested with **Python 3.11.0**.
 
 ## Problems 
 <!-- OPTIONAL -->
