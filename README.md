@@ -17,6 +17,8 @@ Optional program which uses my Bank graph for Hypixel Skyblock program and conne
 - <a href="#table-of-contents">Table of Contents</a>
 - <a href="#how-to-install">How to install</a>
   - <a href="#installing-the-libraries">Installing the libraries</a>
+  - <a href="#installing-the-required-repositories">Installing the required reopsitories</a>
+  - <a href="#how-to-get-a-discord-bot-token">How to get a Discord bot Token</a>
 - <a href="#how-to-use">How to use</a>
 - <a href="#how-it-works">How it works</a>
 - <a href="#tests-and-results">Tests and results</a>
@@ -39,6 +41,32 @@ pip install discord.py python-dotenv
 ```
 
 The library __os__ is preinstalled with Python 3.11.0.
+
+### Installing the required repositories
+
+**Download and install <a href="https://github.com/TachLaif/Bank-graph-for-Hypixel-Skyblock">Bank graph for Hypixel SkyBlock</a> (Installation instructions are in the linked repository).** 
+
+Then download this repository as a .zip file and unzip it to a folder.
+
+Copy and paste __discordBot.py__ and __.env__ in the folder you extracted while you installed <a href="https://github.com/TachLaif/Bank-graph-for-Hypixel-Skyblock">Bank graph for Hypixel SkyBlock</a>.
+
+Your folder structure now should look like this:
+
+```
+\Bank-graph-for-Hypixel-Skyblock-main (or however you called your main directory)
+  \data
+    - readme.txt
+  - main.py
+  - discordBot.py
+  - .env
+  - (OPTIONAL LICENSE AND README.md)
+```
+
+### How to get a Discord bot Token
+
+
+
+### Editing the .env file
 <!-- First a list of all the requirements to run the program 
 If necessary use ### Headlines for subcategories
 Detailed description of how to install the specific requirements and everything the user has to consider for the program to run properly
