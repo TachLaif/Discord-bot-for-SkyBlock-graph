@@ -1,7 +1,7 @@
 # Discord bot for SkyBlock graph
 <a href="https://www.python.org/downloads/release/python-3110/"><img src="https://img.shields.io/badge/python-3.11.0-success?style=for-the-badge&logo=python&logoColor=white"></img></a>
 <img src="https://img.shields.io/badge/Last%20update-17.11.2022-blue?style=for-the-badge"></img>
-<a href="https://www.gnu.org/licenses/gpl-3.0.html"><img src="https://img.shields.io/badge/license-GNU%20GPLv3-important?style=for-the-badge"></img></a> 
+<a href="https://github.com/TachLaif/Discord-bot-for-SkyBlock-graph/blob/main/LICENSE"><img src="https://img.shields.io/github/license/TachLaif/Discord-bot-for-SkyBlock-graph?style=for-the-badge"></img></a>
 
 ## Description
 
