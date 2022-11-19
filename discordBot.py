@@ -2,7 +2,7 @@
 #
 # Discord bot for SkyBlock graph (https://github.com/TachLaif/Discord-bot-for-SkyBlock-graph)
 # - Made with ♥ by TechLife (https://github.com/TachLaif)
-# Last update: 17.11.2022
+# Last update: 19.11.2022
 #
 # This work is made available under the GNU Affero General Public License v3.0.
 # More informations about the license can be found at:
@@ -36,7 +36,7 @@ async def on_message(message):
         return
     if message.content.lower() == command_prefix + 'graph':
         try:
-            generateGraph(os.environ.get('API_KEY'), os.environ.get('PLAYER_UUID'), dark_mode)
+            generateGraph(os.environ.get('API_KEY'), os.environ.get('PLAYER_NAME'), dark_mode)
             with open('graph.png', 'rb') as f:
                 file = discord.File(f, filename = 'graph.png')
                 await message.channel.send(file = file)
