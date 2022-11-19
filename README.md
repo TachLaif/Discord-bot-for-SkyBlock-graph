@@ -1,6 +1,6 @@
 # Discord bot for SkyBlock graph
 <a href="https://www.python.org/downloads/release/python-3110/"><img src="https://img.shields.io/badge/python-3.11.0-success?style=for-the-badge&logo=python&logoColor=white"></img></a>
-<img src="https://img.shields.io/badge/Last%20update-17.11.2022-blue?style=for-the-badge"></img>
+<img src="https://img.shields.io/badge/Last%20update-19.11.2022-blue?style=for-the-badge"></img>
 <a href="https://github.com/TachLaif/Discord-bot-for-SkyBlock-graph/blob/main/LICENSE"><img src="https://img.shields.io/github/license/TachLaif/Discord-bot-for-SkyBlock-graph?style=for-the-badge"></img></a>
 
 ## Description
@@ -104,10 +104,10 @@ When you open the __.env__ file you will see the following:
 ```.env
 DISCORD_TOKEN="[YOUR DISCORD BOT TOKEN HERE]"
 API_KEY="[YOUR HYPIXEL API KEY HERE]"
-PLAYER_UUID="[YOUR MINECRAFT PLAYER UUID HERE]"
+PLAYER_NAME="[YOUR MINECRAFT PLAYER NAME HERE]"
 ```
 
-This is where you have to put your Discord Bot Token, Hypixel API key and your Minecraft Player UUID so that the program can use them later.
+This is where you have to put your Discord Bot Token, Hypixel API key and your Minecraft Player NAME so that the program can use them later.
 
 ## How to use
 
@@ -125,6 +125,8 @@ dark_mode = False
 'command_prefix' is the prefix the bot uses to destinguish commands from messages. You can change it to something else (e.g. '$' or '?') which can be very useful when you have a server with many different bots. 
 
 'dark_mode' specifies if the program should create and send the graph in dark or in light mode. It is set to light mode by default. Change False to True to generate dark mode graphs instead.
+
+**Be aware that you have to terminate and rerun the program for changes to take affect.**
 
 ## How it works
 
