@@ -59,7 +59,7 @@ Your folder structure now should look like this:
   - main.py
   - discordBot.py
   - .env
-  - (OPTIONAL LICENSE AND README.md)
+  - (OPTIONAL LICENSE, README.md AND requirements.txt)
 ```
 
 ### How to get a Discord bot Token
