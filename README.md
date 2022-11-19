@@ -40,6 +40,8 @@ pip install discord.py python-dotenv
 
 The library __os__ is preinstalled with Python 3.11.0.
 
+You can also install them with __requirements.txt__.
+
 ### Installing the required repositories
 
 **Download and install <a href="https://github.com/TachLaif/Bank-graph-for-Hypixel-Skyblock">Bank graph for Hypixel SkyBlock</a> (Installation instructions are in the linked repository).** 
