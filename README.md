@@ -1,6 +1,6 @@
 # Discord bot for SkyBlock graph
 <a href="https://www.python.org/downloads/release/python-3110/"><img src="https://img.shields.io/badge/python-3.11.0-success?style=for-the-badge&logo=python&logoColor=white"></img></a>
-<img src="https://img.shields.io/badge/Last%20update-19.11.2022-blue?style=for-the-badge"></img>
+<img src="https://img.shields.io/badge/Last%20update-17.03.2023-blue?style=for-the-badge"></img>
 <a href="https://github.com/TachLaif/Discord-bot-for-SkyBlock-graph/blob/main/LICENSE"><img src="https://img.shields.io/github/license/TachLaif/Discord-bot-for-SkyBlock-graph?style=for-the-badge"></img></a>
 
 ## Description
@@ -130,9 +130,64 @@ dark_mode = False
 
 ## How it works
 
-W.I.P
+```python
+load_dotenv(find_dotenv())
+```
 
-<!-- Detailed description of how the program works and maybe the thought process that went into creating it -->
+In the beginning this program loads the contents in the .env file so that it can use them later. Then it defines some basic stuff like the command prefix used by the bot to recognize a command or if the generated graph should be in dark mode or not. 
+
+```python
+command_prefix = '!'
+dark_mode = False
+```
+
+Afterwards it sets up the Discord Message intents so that the Bot can read and react to messages.
+
+```python
+intents = discord.Intents.default()
+intents.message_content = True
+client = discord.Client(intents = intents)
+```
+
+The the two events the bot has are defined.
+
+The first event is when the program connects to Discord to start up the bot. In this event the program prints out when the the connection is established and it prints out the names of the servers it is connected to. Here the Bot also changes its status to "Watching your bank account".
+
+```python
+@client.event
+async def on_ready():
+    print('Logged in as a bot {0.user}'.format(client))
+    print('Logged in following servers: ')
+    for guild in client.guilds:
+        print(str(guild))
+    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='your bank account'))
+```
+
+In the second event the bot gets the messages sent and processes them. It starts by checking if the message was sent by a bot and if it was sent by a bot it ignores the message.
+
+```python
+if message.author.bot:
+    return
+```
+
+Then it checks if the message contains the command graph with the predetermined command prefix. To make sure that the command is not case-sensitive the program converts the message to lowercase, which means that it does not matter if you write __!graph__, __!GRAPH__ or something in between. When this command is recognized by the program it tries to generate a graph using the informations given by the .env file. When the graph was successfully built the Discord bot sends it to the channel it recieved the command from, however if generating the graph failed it sends an error message instead.
+
+```python
+if message.content.lower() == command_prefix + 'graph':
+    try:
+        generateGraph(os.environ.get('API_KEY'), os.environ.get('PLAYER_NAME'), dark_mode)
+        with open('graph.png', 'rb') as f:
+            file = discord.File(f, filename = 'graph.png')
+            await message.channel.send(file = file)
+    except:
+        await message.channel.send('Program ran into a problem while generating graph...')
+```
+
+At the end it starts a Bot using your Discord bot Token.
+
+```python
+client.run(os.environ.get('DISCORD_TOKEN'))
+```
 
 ## Tests and results 
 
