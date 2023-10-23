@@ -1,4 +1,4 @@
-# Copyright (C) 2022 - Benjamin Hupf
+# Copyright (C) 2022 - TechLife
 #
 # Discord bot for SkyBlock graph (https://github.com/TachLaif/Discord-bot-for-SkyBlock-graph)
 # - Made with ♥ by TechLife (https://github.com/TachLaif)
